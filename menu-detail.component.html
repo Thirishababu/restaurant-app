@@ -1,0 +1,6 @@
+<div *ngIf="item">
+  <h2>{{ item.name }}</h2>
+  <p><strong>Description:</strong> {{ item.description }}</p>
+  <p><strong>Price:</strong> {{ item.price | currency:'INR' }}</p>
+  <button (click)="router.navigate(['/'])">Back to Menu</button>
+</div>
